@@ -4,11 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
-
+    let newDate = new Date()
+    let year = newDate.getFullYear();
     return (
         <div className="footer_wrapper">
             <ul className="list_footer">
-                <li>© 2021 Tooring</li>
+                <li>© {year} Tooring</li>
                 <li>
                     <div className="redes_content">
                         <a href="https://www.facebook.com/TooringMX"><FontAwesomeIcon className="text-blak" icon={faFacebook} size="lg" /></a>
