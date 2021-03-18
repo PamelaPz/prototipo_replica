@@ -1,64 +1,97 @@
 import React from 'react';
 import './App.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { Col, Row, Button, Form } from 'react-bootstrap';
+import WWW from '../images/www.png';
+import VR from '../images/VR.png';
+import AR from '../images/AR.png';
+import App from '../images/APP.png';
+import LIKE from '../images/LIKE.png';
+import DR from '../images/DR.png';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { Col, Row } from 'react-bootstrap';
 
 function Services() {
   return (
-    <section className="section container container_section">
+    <section className="section container_section bg-black" id="services">
       <Row>
-          <Col lg="5">
-            <div className="container_contacto">
-                <div className="redes_wrapper">
-                  <div className="redes_content">
-                    <a href="#"><FontAwesomeIcon className="icon_face" icon={faFacebook} size="3x" /></a>
-                    <a href="#"><FontAwesomeIcon className="icon_insta" icon={faInstagram} size="3x" /></a>
-                    <a href="#"><FontAwesomeIcon className="icon_linke" icon={faLinkedin} size="3x" /></a>
+          <Col lg="12">
+            <div className="container_services container">
+              <h2 className="title text-white">Nuestros Servicios</h2>
+              
+              <Row>
+                <Col lg="12">
+                  <div className="container_list">
+                    <ul className="list_service">
+                      <li>
+                        <a href="#" className="text-li">
+                          <div className="icon">
+                            <span>WWW</span>
+                          </div>
+                          <p className="text-list">Páginas Web</p>
+                        </a>
+                        <div className="imagen_wrapper">
+                          <img className="img_service" src={WWW}/>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#" className="text-li">
+                          <div className="icon">
+                            <span>VR</span> 
+                          </div>
+                          <p className="text-list">Realidad Virtual </p>
+                        </a>
+                        <div className="imagen_wrapper">
+                          <img className="img_service" src={VR}/>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#" className="text-li">
+                          <div className="icon">
+                            <span>AR</span> 
+                          </div>
+                          <p className="text-list">Realidad Aumentada </p>
+                        </a>
+                        <div className="imagen_wrapper">
+                          <img className="img_service" src={AR}/>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#" className="text-li">
+                          <div className="icon">
+                            <span>APP</span> 
+                          </div>
+                          <p className="text-list">Aplicaciones Móviles </p>
+                        </a>
+                        <div className="imagen_wrapper">
+                          <img className="img_service" src={App}/>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#" className="text-li">
+                          <div className="icon">
+                            <span>DR</span> 
+                          </div>
+                          <p className="text-list">Drones de mapeo </p>
+                        </a>
+                        <div className="imagen_wrapper">
+                          <img className="img_service" src={DR}/>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#" className="text-li">
+                          <div className="icon">
+                            <span>LIKE</span> 
+                          </div>
+                          <p className="text-list">Redes Sociales </p>
+                        </a>
+                        <div className="imagen_wrapper">
+                          <img className="img_service" src={LIKE}/>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
-                </div>
-
-                <div className="datos_wrapper">
-                  <p>Duis nisi sem, lobortis eu arcu a</p>
-                  <p>Praesent ac dui a purus suscipit efficitur. Nullam semper congue posuere. Morbi pellentesque ipsum non enim porta, , vel iaculis odio mattis. Maecenas porta dolor quis iaculis sagittis. </p>
-                  <a href="tel:+4424356590"><p>442 XX XX XXX</p></a>
-                  <a href="mailto:contacto@hakastudio.com"><p>ejemplo@algo.com</p></a>
-                </div>
-            </div>
-          </Col>
-          <Col lg="7">
-            <div className="container_contacto">
-              <div >
-                <h2 className="title">Contáctanos. <br/> Será un placer atenderte</h2>
-                <br/>
-              </div>
-              <Form>
-                <Form.Group controlId="formBasicName">
-                  {/* <Form.Label>Nombre</Form.Label> */}
-                  <Form.Control type="Name" placeholder="Nombre" />
-                </Form.Group>
-                <br />
-                <Form.Group controlId="formBasicEmail">
-                  {/* <Form.Label>Correo</Form.Label> */}
-                  <Form.Control type="email" placeholder="Correo" />
-                </Form.Group>
-                <br />
-                <Form.Group controlId="formBasicTeléfono">
-                  {/* <Form.Label>Teléfono</Form.Label> */}
-                  <Form.Control type="email" placeholder="Teléfono" />
-                </Form.Group>
-                <br />
-                <Form.Group controlId="formBasicMensaje.ControlTextarea1">
-                  {/* <Form.Label>Mensaje</Form.Label> */}
-                  <Form.Control as="textarea" rows={3} placeholder="Mensaje"/>
-                </Form.Group>
-                <br />
-                <div className="btn_wrapper">
-                  <Button variant="" type="submit">
-                    Enviar
-                  </Button>
-                </div>
-              </Form>
+                </Col>
+              </Row>
             </div>
           </Col>
       </Row>
