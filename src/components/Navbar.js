@@ -1,15 +1,16 @@
+import React from 'react';
 import './App.scss';
-import Home from './Home';
-import Contacto from './Contacto';
-import About from './About';
 import logo from '../images/logo.png';
+import Home from './Home';
+import About from './About';
+import { NavHashLink } from 'react-router-hash-link';
 import { Col, Container, Row } from 'react-bootstrap';
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
 } from "react-router-dom";
 
 function Navbar() {
@@ -19,7 +20,7 @@ function Navbar() {
             <nav className="navbar_content">
                 <ul>
                     <li className="logo_wrapper">
-                        <Link to="/" href="#home">
+                        <Link to="/">
                             <div className="logo">
                                 <img src={logo} />
                             </div>
@@ -27,31 +28,27 @@ function Navbar() {
                     </li>
                     <div>
                         <li>
-                            <a href="#services">Servicios</a>
+                            <NavHashLink to="/#home" smooth>Home</NavHashLink>
                         </li>
                         <li>
-                            <Link to="/portfolio">Portafolio</Link>
+                            <NavHashLink to="/#services" smooth>Servicios</NavHashLink>
                         </li>
                         <li>
                             <Link to="/about">Nosotros</Link>
                         </li>
                         <li>
-                            <a href="#contact">Contacto</a>
+                            <NavHashLink to="/#contact" smooth>Contacto</NavHashLink>
                         </li>
                     </div>
                 </ul>
             </nav>
 
-            {/* A <Switch> looks through its children <Route>s and
-                renders the first one that matches the current URL. */}
             <Switch>
+                <Route exact path="/">
+                    <Home />
+                </Route>
                 <Route path="/about">
                     <About />
-                </Route>
-                <Route path="/">
-                    <Home />
-                    <Contacto />
-                    <Contacto />
                 </Route>
             </Switch>
         </div>

@@ -1,14 +1,19 @@
+import React from 'react';
 import './App.scss';
-import { Col, Container, Row } from 'react-bootstrap';
 import Navbar from './Navbar';
+import { Col, Container, Row } from 'react-bootstrap';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   return (
     <Container fluid className="container_wrapper">
       <Row>
-        <Col lg={12}>
           <Navbar/>
-        </Col>
       </Row>
     </Container>
   );

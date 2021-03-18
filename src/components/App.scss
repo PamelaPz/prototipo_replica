@@ -47,4 +47,69 @@
       }
     }
   }
+
+  // Contacto
+  .container_contacto {
+    padding: 2rem 0 0;
+    .redes_wrapper {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem 0;
+      .redes_content {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        a {
+          color: black;
+          margin-right: 4rem;
+        }
+      }
+    }
+    .datos_wrapper {
+      font-size: 18px;
+      margin: 3rem 0 0;
+      a {
+        color: black;
+        padding: 2rem 0;
+      }
+    }
+
+    input, textarea {
+      border: none;
+      color: black;
+      border-bottom: 1px solid gray;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    button {
+      color: black;
+      border-radius: .25rem;
+      padding: 1rem 2rem;
+      border: none;
+      border-bottom: 1px solid gray;
+      background-color:transparent;
+      transition: .3s ease;
+      &:hover{
+        background-color: rgba(146, 143, 143, .3);
+        // color: white;
+      }
+    }
+    .btn_wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+.info_content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
