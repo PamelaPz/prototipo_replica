@@ -1,3 +1,5 @@
+@import '../index.scss';
+
 .container_wrapper {
   padding: 0;
   margin: 0;
@@ -6,21 +8,23 @@
 
   // Navbar Top
   .navbar_wrapper {
-    position: relative;
-    
+    // position: relative;
+    .active_nav {
+      background-color: white !important;
+    }
     .navbar_content {
       width: 100%;
       font-size: 14px;
-      height: 6rem;
+      height: 5.5rem;
       padding: 0 14rem;
-      position: fixed;
+      position: absolute;
       z-index: 5;
       left: 0;
       top: 0;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: rgba(255, 255, 255, .2);
+      background-color: transparent;
       ul {
         width: 100%;
         display: flex;
@@ -43,16 +47,98 @@
           display: inline-block;
           margin-left: 15px;
           color: black;
+          font-weight: 500;
         }
       }
     }
   }
 
+  // Servicios
+  .container_services {
+    height: 100%;
+    padding: 2rem 0 0;
+    .container_list{
+      height: 35rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .list_service {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      text-decoration: none;
+      list-style: none;
+      padding: 20px 0;
+      font-size: 23px;
+      font-family: 'Source Code Pro', monospace;
+      position: relative;
+      li {
+        width: 100%;
+        .text-li {
+          color: gray;
+          text-decoration: none;
+          width: 40% ;
+          height: inherit;
+          padding: .6rem 0;
+          display: flex;
+          transition: padding-left .5s ease, font-size .3s;
+        }
+        &:hover .text-li{
+          font-size: 25px;
+          color: $color-white !important;
+          padding-left: 1.5rem;
+          border-left: 1px solid $color-white;
+        }
+        &:hover .imagen_wrapper .img_service {
+          opacity: 1 !important;
+        }
+        .imagen_wrapper {
+          width: 60%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          right: 0;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          transition: .2s ease;
+          .img_service {
+            opacity: 0;
+            width: 100%;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .icon{
+        width: 4rem;
+      }
+      .text-list {
+        padding: 0 0 0 2rem;
+        margin: 0;
+      }
+    }
+  }
+
   // Contacto
+  .contacto {
+    height: 105vh;
+    background-image: url('../images/triangulo.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .container_contacto {
+    height: 76vh !important;
     padding: 2rem 0 0;
     .redes_wrapper {
-      height: 100%;
+      // height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -103,6 +189,25 @@
       width: 100%;
       display: flex;
       justify-content: flex-end;
+    }
+  }
+
+  // Footer
+  .footer_wrapper {
+    width: 100%;
+    // background-color: black;
+    .list_footer {
+      height: 4rem;
+      margin: 0;
+      // color: white;
+      list-style: none;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .redes_content a{
+        padding: 0 1rem;
+      }
     }
   }
 }
