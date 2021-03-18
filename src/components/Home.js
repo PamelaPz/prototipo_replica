@@ -5,7 +5,7 @@ import img2 from '../images/bk102.jpg';
 import img3 from '../images/bk103.jpg';
 import Contact from './Contact';
 import Services from './Services';
-import { Col, Container, Row, Carousel } from 'react-bootstrap';
+import { Carousel } from 'react-bootstrap';
 
 function Home() {
   return (
@@ -50,11 +50,11 @@ function Home() {
         </Carousel>
       </div>
 
-      <div id="services">
+      <div>
         <Services />
       </div>
       
-      <div id="contact">
+      <div>
         <Contact />
       </div>
     </div>
