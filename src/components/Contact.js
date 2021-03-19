@@ -14,7 +14,7 @@ function Contact() {
                     <div className="redes_content">
                       <a href="https://www.facebook.com/TooringMX"><FontAwesomeIcon className="icon_face" icon={faFacebook} size="3x" /></a>
                       <a href="https://www.instagram.com/tooringmx/"><FontAwesomeIcon className="icon_insta" icon={faInstagram} size="3x" /></a>
-                      <a href="#"><FontAwesomeIcon className="icon_linke" icon={faLinkedin} size="3x" /></a>
+                      <a href="#home"><FontAwesomeIcon className="icon_linke" icon={faLinkedin} size="3x" /></a>
                     </div>
                   </div>
 

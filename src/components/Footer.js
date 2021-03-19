@@ -14,7 +14,7 @@ function Footer() {
                     <div className="redes_content">
                         <a href="https://www.facebook.com/TooringMX"><FontAwesomeIcon className="text-blak" icon={faFacebook} size="lg" /></a>
                         <a href="https://www.instagram.com/tooringmx/"><FontAwesomeIcon className="text-blak" icon={faInstagram} size="lg" /></a>
-                        <a href="#"><FontAwesomeIcon className="text-blak" icon={faLinkedin} size="lg" /></a>
+                        <a href="#home"><FontAwesomeIcon className="text-blak" icon={faLinkedin} size="lg" /></a>
                     </div>
                 </li>
                 <li>Snisi sem lobortis</li>

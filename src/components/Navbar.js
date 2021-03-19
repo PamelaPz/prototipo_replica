@@ -22,7 +22,7 @@ function Navbar() {
                         <li className="logo_wrapper">
                             <Link to="/">
                                 <div className="logo">
-                                    <img src={logo} />
+                                    <img src={logo} alt="logo"/>
                                 </div>
                             </Link>
                         </li>

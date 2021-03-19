@@ -4,7 +4,7 @@ import img1 from '../images/bk104.jpg';
 import client1 from '../images/client1.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { Container, Col, Row} from 'react-bootstrap';
+import { Col, Row} from 'react-bootstrap';
 
 function About() {
   return (
@@ -14,7 +14,7 @@ function About() {
           <Row>
               <Col lg="6">
                 <div className="wrapper-img">
-                  <img src={img1} className=""/>
+                  <img src={img1} className="" alt="team"/>
                 </div>
               </Col>
               <Col lg="6">
@@ -33,18 +33,18 @@ function About() {
         <div className="grid_clients text-center">
           <h2 className="title_2">Nuestros Clientes</h2>
           <div className="content_img">
-            <img src={client1} />
-            <img src={client1} />
-            <img src={client1} />
-            <img src={client1} />
-            <img src={client1} />
-            <img src={client1} />
-            <img src={client1} />
-            <img src={client1} />
-            <img src={client1} />
-            <img src={client1} />
-            <img src={client1} />
-            <img src={client1} />
+            <img src={client1} alt="cliente"/>
+            <img src={client1} alt="cliente"/>
+            <img src={client1} alt="cliente"/>
+            <img src={client1} alt="cliente"/>
+            <img src={client1} alt="cliente"/>
+            <img src={client1} alt="cliente"/>
+            <img src={client1} alt="cliente"/>
+            <img src={client1} alt="cliente"/>
+            <img src={client1} alt="cliente"/>
+            <img src={client1} alt="cliente"/>
+            <img src={client1} alt="cliente"/>
+            <img src={client1} alt="cliente"/>
           </div>
         </div>
       </section>
@@ -55,7 +55,7 @@ function About() {
               <div className="redes_content">
                   <a href="https://www.facebook.com/TooringMX"><FontAwesomeIcon className="text-white" icon={faFacebook} size="lg" /></a>
                   <a href="https://www.instagram.com/tooringmx/"><FontAwesomeIcon className="text-white" icon={faInstagram} size="lg" /></a>
-                  <a href="#"><FontAwesomeIcon className="text-white" icon={faLinkedin} size="lg" /></a>
+                  <a href="#about"><FontAwesomeIcon className="text-white" icon={faLinkedin} size="lg" /></a>
               </div>
           </li>
           <li>Mauris ultricies argcal</li>

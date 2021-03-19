@@ -1,13 +1,7 @@
 import React from 'react';
 import './App.scss';
 import Navbar from './Navbar';
-import { Col, Container, Row } from 'react-bootstrap';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { Container } from 'react-bootstrap';
 import Footer from './Footer';
 
 function App() {
