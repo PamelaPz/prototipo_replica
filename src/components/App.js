@@ -13,10 +13,8 @@ import Footer from './Footer';
 function App() {
   return (
     <Container fluid className="container_wrapper">
-      <Row>
-          <Navbar/>
-          <Footer />
-      </Row>
+      <Navbar/>
+      <Footer />
     </Container>
   );
 }
